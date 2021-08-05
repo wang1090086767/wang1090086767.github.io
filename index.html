@@ -15,9 +15,18 @@
       name: '个人博客',
       repo: 'https://github.com/wang1090086767/wang1090086767.github.io',
 	  loadSidebar: true,
-	  subMaxLevel: 3
+	  subMaxLevel: 3,
+	  search: {
+            maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            noData: '找不到结果',//搜索不到结果时显示
+            paths: 'auto',//自动
+            placeholder: '搜索',//搜索框提示
+        }
     }
   </script>
+  <!-- search -->
+
+<script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
 </body>
